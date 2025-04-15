@@ -1,0 +1,4 @@
+[submodule "modules/dotlyx"]
+	path = modules/dotlyx
+	url = https://github.com/goi17/dotlyx.git
+	branch = main
