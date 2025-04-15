@@ -18,6 +18,7 @@ with import ../../../env.nix;
   };
   programs.zsh = import "${dotfilesDirectory}/shell/zsh/zsh.nix";
   home.file = {
+    "~/.wezterm.lua" = "${dotfilesDirectory}/terminals/wezterm/wezterm.lua";
     #symlinks
     #ex.
     # ".config/nvim-nvchad".source = "${dotfilesDirectory}/editors/nvim-nvchad";
