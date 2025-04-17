@@ -19,9 +19,11 @@ with import ../../../env.nix;
   programs.zsh = import "${dotfilesDirectory}/shell/zsh/zsh.nix";
   home.file = {
     ".wezterm.lua".source = "${dotfilesDirectory}/terminals/wezterm/wezterm.lua";
-    #symlinks
-    #ex.
-    # ".config/nvim-nvchad".source = "${dotfilesDirectory}/editors/nvim-nvchad";
-    # ".config/nvim-nvchad".force = true;
+    ".config/nvim-nvchad".source = "${dotfilesDirectory}/editors/nvim-nvchad";
+    ".config/nvim-nvchad".force = true;
+    ".config/nvim-astro".source = "${dotfilesDirectory}/editors/nvim-astro";
+    ".config/nvim-astro".force = true;
+    ".config/nvim-scratch".source = "${dotfilesDirectory}/editors/nvim-scratch";
+    ".config/nvim-scratch".force = true;
   };
 }
